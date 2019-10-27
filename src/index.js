@@ -12,10 +12,10 @@ fetch(
   'https://www.teamtrees.org/',
   {
     Accept: 'text/html',
-  }
+  },
 )
   .then(handleHTTPErrors)
-  .then(response => response.text())
+  .then((response) => response.text())
   .then((text) => {
     const match = text.match(/<div id="totalTrees" class="counter" data-count="(\d*)">0<\/div>/);
     if (match) {
