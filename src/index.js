@@ -12,7 +12,6 @@ fetch(
   'https://www.teamtrees.org/',
   {
     Accept: 'text/html',
-    "Accept-Encoding": 'gzip'
   }
 )
   .then(handleHTTPErrors)
