@@ -8,13 +8,6 @@ const handleHTTPErrors = (response) => {
   return response;
 };
 
-fetch(
-  'https://www.teamtrees.org/',
-  {
-    Accept: 'text/html',
-  },
-)
-  .then(handleHTTPErrors)
 const getDonatedTrees = () => new Promise((
   (resolve, reject) => fetch(
     'https://www.teamtrees.org/',
