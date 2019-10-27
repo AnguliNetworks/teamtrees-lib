@@ -1,0 +1,23 @@
+{
+  "name": "teamtrees-lib",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/AnguliNetworks/teamtrees-lib.git",
+  "author": "Anguli Networks <mail@angu.li>",
+  "license": "MIT",
+  "private": false,
+  "devDependencies": {
+    "@babel/cli": "^7.6.4",
+    "@babel/core": "^7.6.4",
+    "@babel/node": "^7.6.3",
+    "@babel/preset-env": "^7.6.3"
+  },
+  "scripts": {
+    "dev": "babel-node src/index.js",
+    "start": "node dist/index.js",
+    "build": "babel src -d lib"
+  },
+  "dependencies": {
+    "node-fetch": "^2.6.0"
+  }
+}
